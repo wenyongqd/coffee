@@ -1,6 +1,6 @@
 :root {
-  --mainBrown: #2d1ef1;
-  --mainYellow: #ff9e09;
+  --mainBrown: #2d1e1f;
+  --mainYellow: #ff9d0a;
   --mainGrey: #ece8dc;
   --mainWhite: #fff;
   --mainDark: #222;
@@ -9,20 +9,45 @@
 body {
   background: var(--mainWhite);
   color: var(--mainDark);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
-
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Courier New', Courier, monospace;
-  letter-spacing: 0.25rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Courier New", Courier, monospace !important;
+  letter-spacing: 0.25rem !important;
 }
-
 .text-yellow {
   color: var(--mainYellow);
 }
-
 .cart-icon {
   cursor: pointer;
   color: var(--mainYellow);
-  font-size:  2rem;
+  font-size: 2rem;
+}
+.default-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5));
+  background-position: center;
+  background-size: cover;
+}
+
+.btn-yellow {
+  color: var(--mainYellow);
+  border-color: var(--mainYellow);
+}
+
+.btn-yellow:hover {
+  background: var(--mainYellow);
+  color: var(--mainBrown);
+}
+
+.footer {
+  background: var(--mainBrown);
 }
