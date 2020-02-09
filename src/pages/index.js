@@ -11,6 +11,7 @@ const IndexPage = ({data}) => (
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
       title="regular joe's"
+      // title="fengchun & wenyong's story"
       />
       <Info />
   </Layout>
