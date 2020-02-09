@@ -19,7 +19,7 @@ const IndexPage = ({data}) => (
 
 export const query = graphql`
 {
-  img:file(relativePath:{eq:"default-background.jpeg"}){
+  img:file(relativePath:{eq:"WechatIMG4.jpeg"}){
     childImageSharp{
       fluid{
         ...GatsbyImageSharpFluid_tracedSVG
