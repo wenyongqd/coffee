@@ -3,30 +3,29 @@ import Product from "./Product";
 import Title from "../Globals/Title";
 import { StaticQuery, graphql } from "gatsby";
 
-const getProducts = graphql`
-  {
-    products: allContentfulCoffeeProduct {
-      edges {
-        node {
-          id
-          title
-          price
-          image {
-            fluid(maxHeight: 426) {
-              src
-              ...GatsbyContentfulFluid_tracedSVG
-            }
+const query = graphql`
+{
+	products:allContentfulCoffeeProduct {
+    edges{
+      node{
+        id
+        title
+        price
+        image{
+          fluid(maxHeight:426) {
+            src
           }
         }
       }
     }
   }
-`;
+}
+`
 
 export default function Products() {
   return (
     <StaticQuery
-      query={getProducts}
+      query={query}
       render={data => {
         return (
           <section className="py-5">
